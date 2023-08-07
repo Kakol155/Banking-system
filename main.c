@@ -54,12 +54,12 @@ int main()
     fclose(password);
 
     printf("|----------------------------------|\n");
-    printf("|1.Deposit money                 |\n");
-    printf("|2.Withdraw money                |\n");
-    printf("|3.Current balance                  |\n");
-    printf("|4.Change login                     |\n");
-    printf("|5.Change password                     |\n");
-    printf("|6.Log out                     |\n");
+    printf("|1.Top up your account             |\n");
+    printf("|2.Withdraw money                  |\n");
+    printf("|3.Current balance                 |\n");
+    printf("|4.Change login                    |\n");
+    printf("|5.Change password                 |\n");
+    printf("|6.Log out                         |\n");
     printf("|----------------------------------|\n");
 
     printf("Give me the number \n");

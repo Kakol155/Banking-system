@@ -4,62 +4,38 @@
 int main()
 {
 
-    FILE *login;
-    FILE *password;
+
     FILE *bank_balance;
 
 
     char r;
-    char nowy_login[20];
-    char nowe_haslo[20];
+
     float kwota_do_wyplaty;
     float kwota_do_wplaty;
-    char haslo_z_klawiatury[20];
-    char haslo_z_pliku[20];
-    char login_z_klawiatury[20];
-    char login_z_pliku[20];
     char saldo_aktulane_z_pliku[20];
     float saldo_aktulane_z_pliku_float;
     float saldo_zaktulizowane;
     char saldo_po_konwersji[20];
     char aktualne_saldo[20];
+    char informacje_z_pliku[20];
 
-    login = fopen("login.txt", "r");
-    fgets(login_z_pliku,20,login);
+    bank_balance = fopen("bank_balance.txt","r");
 
-    password = fopen("password.txt", "r");
-    fgets(haslo_z_pliku,20,password);
+    fgets(informacje_z_pliku,20,bank_balance);
 
+    fclose(bank_balance);
 
-    printf("Enter login\n");
-    scanf("%s",&login_z_klawiatury);
+    bank_balance = fopen("bank_balance.txt","w");
 
+    fprintf(bank_balance,"%s",informacje_z_pliku);
 
-    printf("Enter your password\n");
-    scanf("%s",&haslo_z_klawiatury);
-
-
-
-    if( strcmp (login_z_pliku,login_z_klawiatury) == 0 && strcmp (haslo_z_pliku,haslo_z_klawiatury) == 0)
-    {
-        printf("Logged in\n\n");
-    }
-    else
-    {
-        printf("Wrong password or login\n\n");
-        return;
-    }
-
-    fclose(login);
-    fclose(password);
+    fclose(bank_balance);
 
     printf("|----------------------------------|\n");
     printf("|1.Top up your account             |\n");
     printf("|2.Withdraw money                  |\n");
     printf("|3.Current balance                 |\n");
-    printf("|4.Change login                    |\n");
-    printf("|5.Change password                 |\n");
-    printf("|6.Log out                         |\n");
+    printf("|4.Exit                            |\n");
     printf("|----------------------------------|\n");
 
     printf("Give me the number \n");
@@ -91,6 +67,14 @@ int main()
 
         fclose(bank_balance);
 
+        bank_balance = fopen("bank_balance.txt","r");
+
+        fgets(aktualne_saldo,20,bank_balance);
+
+        printf("Current balance %s\n\n",aktualne_saldo);
+
+        fclose(bank_balance);
+
         break;
 
         case '2':
@@ -117,6 +101,14 @@ int main()
 
         fclose(bank_balance);
 
+        bank_balance = fopen("bank_balance.txt","r");
+
+        fgets(aktualne_saldo,20,bank_balance);
+
+        printf("Current balance %s\n\n",aktualne_saldo);
+
+        fclose(bank_balance);
+
         break;
 
         case'3':
@@ -131,41 +123,8 @@ int main()
 
         break;
 
+
         case'4':
-
-        login = fopen("login.txt", "w");
-
-        printf("Enter a new login\n");
-        scanf("%s",&nowy_login);
-
-        fprintf(login,"%s",nowy_login);
-
-        puts("");
-
-        printf("Login has been changed\n");
-
-        fclose(login);
-
-        break;
-
-        case'5':
-
-        password = fopen("password.txt", "w");
-
-        printf("Enter a new password\n");
-        scanf("%s",&nowe_haslo);
-
-        fprintf(password,"%s",nowe_haslo);
-
-        puts("");
-
-        printf("Password has been changed\n");
-
-        fclose(password);
-
-        break;
-
-        case'6':
 
         puts("");
 

@@ -11,7 +11,7 @@ The program aims to present what a bank account looks like and how to use it.
 - C
 
 ## Project Status
-Ready
+- Ready
 
 ## Usage
 Program service. After starting the program, we have a choice of digits from 1 to 4, entering each digit is associated with a given function:

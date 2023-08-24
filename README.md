@@ -8,7 +8,9 @@
 The program aims to present what a bank account looks like and how to use it.
 
 ## Technologies
-- C
+* C
+* Include stdio.h
+* Include stdlib.h
 
 ## Project Status
 - Ready

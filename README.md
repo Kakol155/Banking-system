@@ -1,21 +1,11 @@
 ## Table of contents
 * [General info](#General-info)
-* [Screenshots](#Screenshots)
 * [Technologies](#Technologies)
 * [Project Status](Project-status)
 * [Usage](#Usage)
 
 ## General info
 The program aims to present what a bank account looks like and how to use it.
-
-## Screenshots
-![Bank1](https://github.com/Kakol155/Banking-system/assets/111421926/458d4b75-7d05-4d71-83db-6147fd5c2a24)
-
-![Bank2](https://github.com/Kakol155/Banking-system/assets/111421926/7c3f3123-e2ce-46e7-9f2b-7363ef5e1dda)
-
-![Bank3](https://github.com/Kakol155/Banking-system/assets/111421926/bbb8aaa1-92e8-49d0-b78e-b53f84b7151c)
-
-![Bank4](https://github.com/Kakol155/Banking-system/assets/111421926/cbfad75d-9d60-412e-9081-3442bf337a21)
 
 ## Technologies
 - C

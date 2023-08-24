@@ -1,11 +1,15 @@
 ## Table of contents
 * [General info](#General-info)
+* [Screenshots](#Screenshots)
 * [Technologies](#Technologies)
 * [Project Status](Project-status)
 * [Usage](#Usage)
 
 ## General info
 The program aims to present what a bank account looks like and how to use it.
+
+## Screenshots
+
 
 ## Technologies
 - C
